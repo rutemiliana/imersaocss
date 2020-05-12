@@ -1,0 +1,44 @@
+body {
+    background: #ff0084;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+     font-family: Arial;
+     
+   }
+   
+   .menu{
+     background-color: white;
+   }
+   
+   .menu ul {
+     display: flex;
+     justify-content: space-around
+   }
+   
+   .menu li{
+     list-style: none
+   }
+   
+   a {
+     color:teal;
+     text-decoration: none;
+   }
+   
+   a:hover {
+     text-decoration: underline;
+   }
+   
+   .site-subtitle,
+   .site-title {
+     color: whitesmoke;
+     text-align: center;
+   }
+   
+   .site-subtitle {
+     font-style: italic;
+   }
+   
+   
+   
+   
