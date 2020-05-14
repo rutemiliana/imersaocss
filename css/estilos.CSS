@@ -1,27 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background: #ff0084;  /* fallback for old browsers */
+  background: #ff0084;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   
-     font-family: Arial;
-     
+   background-size: auto 100vh;
+   height: 100vh;
+   font-family: 'Source Code Pro', monospace;
+    font-size:12px;
+}
+   /* se a tela tiver pelo menos 400 pixels px vai carregar esses estilos*/
+  @media (min-width: 400px) {
+     body{
+       font-size: 14px;
+     }
+   }
+
+   /*breakpoint*/
+   @media (min-width: 600px) {
+     body{
+       font-size: 18px;
+     }
+   }
+
+   /*breakpoint*/
+   @media (min-width: 1200px) {
+    body{
+      font-size: 20px;
+    }
+  }
+
+   header{
+     height: 100vh;
+     display:flex;
+     justify-content: center;
+     align-items: center;
    }
    
    .menu{
      background-color: white;
+     position: fixed;
+     width: 100vw;
+     top:0;
    }
    
    .menu ul {
      display: flex;
-     justify-content: space-around
+     justify-content: space-around;
    }
    
    .menu li{
-     list-style: none
+     list-style: none;
    }
+
+   .menu a {
+     display: block;
+     padding: 10px 20px;
+     
+    }
    
    a {
-     color:teal;
+     color:rgba(94, 9, 49, 0.966);
      text-decoration: none;
    }
    
@@ -34,11 +77,60 @@ body {
      color: whitesmoke;
      text-align: center;
    }
+
+   .site-title {
+     font-size: 4em;
+     font-family: 'Cinzel', serif;
+   }
    
    .site-subtitle {
      font-style: italic;
+     font-family: 'Rokkitt', serif;
+     line-height: 2.4em;
    }
-   
-   
-   
-   
+
+.portifolio {
+  padding: 2em;
+  height: 200vh;
+}
+
+.portifolio h2 {
+  font-family: 'Rokkitt', serif;
+  color: beige;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.portifolio .grid {
+  display: grid;
+  gap: 2em;
+ }
+ 
+@media (min-width: 560px) {
+  .portifolio .grid {
+  grid-template-columns: 240px 240px;
+    
+  }
+}
+
+@media (min-width: 880px) {
+  .portifolio .grid {
+  grid-template-columns: repeat(3, 260px);
+  align-content: center;
+  justify-content: center;
+  height: calc(100vh - 8em - 48px);
+  }
+}
+
+.portifolio figure{
+  text-align: center;
+}
+
+   .img-portifolio {
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left bottom;
+   }
+
+  
