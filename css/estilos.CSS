@@ -132,7 +132,7 @@ body {
 }
 
    .img-portfolio {
-    height: 180x;
+    height: 180px;
     width: 240px;
     object-fit: cover;
     object-position: left bottom;
