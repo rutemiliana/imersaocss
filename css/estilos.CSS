@@ -91,20 +91,23 @@ body {
 
 .portifolio {
   padding: 2em;
-  height: 200vh;
+  height: 100vh;
 }
 
 .portifolio h2 {
-  font-family: 'Rokkitt', serif;
+    font-family: 'Rokkitt', serif;
   color: beige;
-  margin-bottom: 1.5em;
-  font-size: 2em;
+  margin-bottom: 0.5em;
+  font-size: 3.5em;
 }
 
 .portifolio .grid {
   display: grid;
-  gap: 2em;
+  gap: 4em;
+  
  }
+
+}
  
 @media (min-width: 560px) {
   .portifolio .grid {
@@ -123,14 +126,18 @@ body {
 }
 
 .portifolio figure{
-  text-align: center;
+    text-align: center;
+    color: whitesmoke
+
 }
 
-   .img-portifolio {
-    height: 180px;
+   .img-portfolio {
+    height: 180x;
     width: 240px;
     object-fit: cover;
     object-position: left bottom;
-   }
+    border-radius: 0.5em;
+            
+  }
 
   
